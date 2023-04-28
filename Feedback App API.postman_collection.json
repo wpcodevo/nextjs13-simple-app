@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "792e7144-32f2-4c81-b384-69e5d7bd6e20",
+		"name": "Feedback App API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14791724"
+	},
+	"item": [
+		{
+			"name": "Add Feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Learn how to cook\",\r\n    \"rating\": 4.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedbacks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedbacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a feedback",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"John Doe\",\r\n    \"rating\": 4.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedbacks/5ddd7c70-bd55-4614-85ea-0687bb7c2556",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedbacks",
+						"5ddd7c70-bd55-4614-85ea-0687bb7c2556"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All feedbacks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/feedbacks?page=1&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedbacks"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch One feedback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/feedbacks/5ddd7c70-bd55-4614-85ea-0687bb7c2556",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedbacks",
+						"5ddd7c70-bd55-4614-85ea-0687bb7c2556"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a feedback",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/feedbacks/4794caa9-e13b-4ddc-b81b-c48747a325c5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedbacks",
+						"4794caa9-e13b-4ddc-b81b-c48747a325c5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
