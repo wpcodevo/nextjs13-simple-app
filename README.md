@@ -22,5 +22,5 @@ In this article, you will learn how to build a basic RESTful API in the new Next
 - Conclusion
 
 
-Read the entire article here: [hhttps://codevoweb.com/build-a-simple-api-in-next-js-13-app-directory/](https://codevoweb.com/build-a-simple-api-in-next-js-13-app-directory/)
+Read the entire article here: [https://codevoweb.com/build-a-simple-api-in-next-js-13-app-directory/](https://codevoweb.com/build-a-simple-api-in-next-js-13-app-directory/)
 
