@@ -13,6 +13,9 @@ export async function GET(request: NextRequest) {
     const feedbacks = await prisma.feedback.findMany({
       skip,
       take: limit,
+      orderBy: {
+        createdAt: "desc",
+      },
     });
 
     let json_response = {
